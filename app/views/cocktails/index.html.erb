@@ -1,0 +1,10 @@
+<h1>Your are on the Index page</h1>
+
+<div><%= link_to "Create a new cocktail", new_cocktail_path %></div>
+
+<div>
+  <% @cocktails.each do |cocktail| %>
+    <h2><%= cocktail.name %></h2>
+    <%= link_to "More details", cocktail %>
+  <% end %>
+</div>
