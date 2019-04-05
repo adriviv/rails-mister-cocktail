@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root to 'cocktails#index'
+
   get 'doses/new'
   get 'doses/create'
   get 'doses/destroy'
@@ -12,8 +15,7 @@ Rails.application.routes.draw do
 
 #     resources :ingredients, only: [:new, :create] do
 #     end
-#   end
-
+#   endr
 
 #   # DELETE /integredients/6767
 #   resources :ingredients, only: [:destroy]
